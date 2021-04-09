@@ -1,0 +1,30 @@
+/* 초기화 */
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+* {
+  font-family: 'Nanum Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "MaruBuri-Regular";
+}
+ul,
+li,
+h3 {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+img {
+  vertical-align: top;
+  border: 0;
+}
+.clear:after {
+  display: block;
+  content: "";
+  clear: both;
+}

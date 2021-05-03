@@ -595,14 +595,14 @@ margin-bottom:7%;
 
 /* newsletter start */
 
-.newsletter {
+.newsLetter {
   width: 90%;
-  height: auto;
   margin: 0 auto;
 }
 .email_txt {
   width: 90%;
   margin: 0 auto;
+  
 }
 .email_txt p {
   color: rgb(202, 129, 129);
@@ -620,6 +620,7 @@ margin-bottom:7%;
   line-height: 30px;
   border-bottom: 2px solid rgb(173, 173, 173);
   padding: 10px 0 0 0;
+  outline:none;
 }
 .sns {
   margin: 0 auto;

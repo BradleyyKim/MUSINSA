@@ -35,7 +35,7 @@ new Swiper('.headerBg .swiper-container', {
 });
 
 
-const promotionEl = document.querySelector('.promotion');
+/* const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromotion = false;
 promotionToggleBtn.addEventListener('click', function() {
@@ -47,4 +47,27 @@ promotionToggleBtn.addEventListener('click', function() {
     //보임처리!
     promotionEl.classList.remove('hide');
   }
+}); */
+
+
+
+/* 뉴스구독 버튼  */
+const signInEl = document.querySelector('.signIn');
+const signInputEl = signInEl.querySelector('input');
+
+
+signInEl.addEventListener('click', function() {
+  signInputEl.focus();
+});
+
+signInputEl.addEventListener('focus', function() {
+  signInEl.classList.add('focused');
+  signInputEl.setAttribute('placeholder', 'Enter Your E-mail :)');
+  signInputEl.style.fontStyle = 'italic';
+  signInputEl.style.color = 'black';
+});
+
+signInputEl.addEventListener('blur', function() {
+  signInEl.classList.remove('focused');
+  signInputEl.setAttribute('placeholder', '');
 });

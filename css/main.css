@@ -27,6 +27,7 @@ i {
 /* HEADER */
 header {
   background-color: transparent;
+  
 }
 header > .inner {
   height:120px;
@@ -39,6 +40,7 @@ header .logo {
   left:0;
   right:0;
   margin: auto;
+  z-index: 1;
 }
 header .logo img {
   width: 180px;
@@ -49,6 +51,7 @@ header .sub_menu {
   margin:auto;
   right:10px;
   display: flex;
+  z-index: 1;
 }
 header .sub_menu ul.menu {
   font-family: Arial, sans-serif;
@@ -241,7 +244,7 @@ header .main-menu .item .item__contents .contents__texture .inner img {
   width:100vw;
   position:absolute;
   top:0;
-  z-index: -1;
+  z-index: 0;
 }
 .headerBg .swiper-container .swiper-wrapper .swiper-slide {
   height:100vh;
@@ -293,7 +296,7 @@ header .main-menu .item .item__contents .contents__texture .inner img {
   -moz-transition: 0.4s;
   -ms-transition: 0.4s;
   -o-transition: 0.4s;
-  z-index: 1;
+  z-index: 0;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -391,10 +394,12 @@ header .main-menu .item .item__contents .contents__texture .inner img {
 .clothes .clothesMainTxt h3{
   font-size:30px;
   font-weight: bold;
+  
 }
 .clothes .clothesMainTxt h5{
   font-size:18px;
   margin-top:10px;
+  color:#333;
 }
 .clothes .clothesImg {
   width:85%;
@@ -500,6 +505,7 @@ header .main-menu .item .item__contents .contents__texture .inner img {
   height: 700px;
   background-color: #333;
   overflow: hidden;
+  margin-bottom:100px;
 }
 .youtube .youtube__area {
   width:1920px;
@@ -533,3 +539,179 @@ header .main-menu .item .item__contents .contents__texture .inner img {
   top:0;
   left:0;
 }
+.youtube .btn {
+  position:absolute;
+  top:85%;
+  left:50%;
+  transform: translateX(-50%);
+  width:180px;
+  padding:10px;
+  border:2px solid #fdfdfd;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color:#fdfdfd;
+  font-size:16px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  display: block;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+  z-index: 1;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.youtube .btn:hover {
+  width:250px;
+  border:2px solid #fff;
+  background-color: #fff;
+  color:#000;
+}
+
+.newsLetter {
+  width: 90%;
+  margin: 0 auto;
+}
+.email_txt {
+  width: 90%;
+  margin: 0 auto;
+}
+.email_txt p {
+  color: #333;
+  padding-bottom: 2%;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.signIn {
+  height:34px;
+  position:relative;
+  top:0;
+  bottom:0;
+  margin:auto;
+}
+.signIn i {
+  color:#333;
+}
+.signIn:hover i {
+  cursor: pointer;
+}
+.signIn input {
+  width:36px;
+  height:34px;
+  padding: 4px 10px;
+  box-sizing:border-box;
+  border:transparent;
+  color:#333;
+  outline:none;
+  background-color:transparent;
+  font-size: 12px;
+  transition: width .4s;
+  -webkit-transition: width .4s;
+  -moz-transition: width .4s;
+  -ms-transition: width .4s;
+  -o-transition: width .4s;
+}
+.signIn input:focus {
+  width:190px;
+  border-bottom:1px solid #333;
+  color:#333;
+}
+.signIn input::placeholder {
+  color: #333;
+}
+.signIn .material-icons{
+  height:20px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  margin:auto;
+  transition: .3s;
+  -webkit-transition: .3s;
+  -moz-transition: .3s;
+  -ms-transition: .3s;
+  -o-transition: .3s;
+}
+.signIn.focused .material-icons{
+  opacity: 0;
+}
+
+.sns {
+  margin: 0 auto;
+  margin-top: 10%;
+  padding-left: 2px; 
+  width: 90%;
+  height: auto;
+  text-align: center;
+}
+.sns a {
+  color: rgb(180, 180, 180);
+  font-weight: bold;
+  padding:2%;
+  font-size:19px;
+}
+.sns a:hover {
+  color: brown;
+}
+.notice {
+  width: 90%;
+  height:auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-top:10%;
+  margin-bottom:10%;
+  
+}
+.notice h1 {
+  font-size: 40px;
+}
+.notice h3 {
+  font-size: 15px;
+}
+#footer {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 10%;
+  height: 140px;
+  background-color: black;
+}
+#footer h2,
+h5,
+p {
+  color: #d4d4d4;
+}
+#footer h2 {
+  font-size: 17px;
+  padding: 5px;
+  margin:0 auto;
+  padding-top:20px;
+}
+#footer h5 {
+  padding: 5px;
+  font-weight: normal;
+}
+#footer .footer_private {
+  font-weight: bold;
+}
+#footer h5 a {
+  padding: 0 10px 0 10px;
+  color:#d4d4d4;
+}
+#footer h5 a:hover {
+  color: palevioletred
+}
+#footer p {
+  font-size: 12px;
+  padding: 3px;
+}
+/* footer end */

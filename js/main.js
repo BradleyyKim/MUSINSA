@@ -85,3 +85,29 @@ signInputEl.addEventListener('blur', function() {
   signInEl.classList.remove('focused');
   signInputEl.setAttribute('placeholder', '');
 });
+
+
+/* Mmenu Bar */
+const navSlide = () => {
+  const burger = document.querySelector('.fa-bars');
+  const nav = document.querySelector('.Mmenu');
+  const navLinks = document.querySelectorAll('.Mmenu li');
+
+
+  burger.addEventListener('click', () => {
+      //toggle Nav  
+      nav.classList.toggle('Mmenu-active');
+
+      //Animate links
+      navLinks.forEach((link, index) => {
+          if (link.style.animation) {
+              link.style.animation = '';
+          } else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.5}s`;
+          }
+      });
+  });
+
+}
+
+navSlide();

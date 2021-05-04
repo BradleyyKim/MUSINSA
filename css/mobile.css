@@ -1,6 +1,33 @@
 @media all and (max-width:630px) {
+  body {
+    overflow-x: hidden;
+  }
   header .main-menu {
     display: none;
+  }
+  .inner {
+    width:100%;
+  }
+  header .sub_menu {
+    width:95%;
+    top:25px;
+    margin:0 auto;
+    z-index: 1;
+    
+  }
+  header .sub_menu ul.menu li:nth-child(1) { 
+    display: block; /* menuBar */
+  }
+  header .sub_menu ul.menu li:nth-child(3) {
+    display: none;
+  }
+  header .sub_menu div.search {
+    height:40px;
+    position:absolute;
+    top:0;
+    bottom:0;
+    margin:auto;
+    right:0;
   }
   .headerBg .swiper-container .swiper-wrapper .slide1{
     background-image:url(../img/mainVisual/menu_img_woman.png);
@@ -20,8 +47,63 @@
   .headerBg .swiper-container .swiper-wrapper .slide6{
     background-image:url(../img/mainVisual/menu_img_musinsa.png);
   }
+ 
+  .Mmenu {
+    position: absolute;
+    z-index: 1;
+    left:0;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 30px 20px;
+    height:92vh;
+    width:60vw;
+    background-color: rgb(245, 211, 170);
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+    transition:transform 0.4s ease-in;
+    -webkit-transition:transform 0.4s ease-in;
+    -moz-transition:transform 0.4s ease-in;
+    -ms-transition:transform 0.4s ease-in;
+    -o-transition:transform 0.4s ease-in;
+}
+  .Mmenu-active {
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    -o-transform: translateX(0%);
+}
+  .Mmenu .item {
+    padding-top:7vh;
+    opacity: 0;
+  }
+  .Mmenu .item .item__name {
+    font-weight: bold;
+    font-size: 30px;
+  }
+}
 
-
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform:  translateX(50px);
+    -webkit-transform:  translateX(50px);
+    -moz-transform:  translateX(50px);
+    -ms-transform:  translateX(50px);
+    -o-transform:  translateX(50px);
+  }
+  to{
+    opacity: 1;
+    transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -o-transform: translateX(0px);
+}
 
 
 }

@@ -23,7 +23,9 @@ i {
   margin:0 auto;
   position:relative;
 }
-
+.Mmenu {
+  display: none;
+}
 /* HEADER */
 header {
   background-color: transparent;
@@ -62,6 +64,9 @@ header .sub_menu ul.menu li {
   top:0;
   bottom:0;
   margin:auto;
+}
+header .sub_menu ul.menu li:nth-child(1) {
+ display: none;
 }
 /* header .sub_menu ul.menu li::before {
   content:"";

@@ -34,7 +34,21 @@ new Swiper('.headerBg .swiper-container', {
   }
 });
 
-
+new Swiper('.phasers .swiper-container', {
+  centeredSlides: true,
+  loop: true,
+  autoplay: {
+    delay: 3000
+  },
+  pagination: {
+    el: '.phasers .swiper-pagination', //페이지 번호 요소 선택자
+    clickable: true //사용자의 페이지 번호 요소 제어 
+  },
+  navigation: {
+    prevEl: '.phasers .swiper-prev',
+    nextEl: '.phasers .swiper-next'
+  }
+})
 /* const promotionEl = document.querySelector('.promotion');
 const promotionToggleBtn = document.querySelector('.toggle-promotion');
 let isHidePromotion = false;

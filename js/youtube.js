@@ -10,6 +10,9 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 function onYouTubeIframeAPIReady() {
   // <div id="player"></div>
   new YT.Player('player', {
+    origin: 'http://localhost:5502',
+    height: '360',
+    width: '640',
     videoId: '8VRj9tXu4NI',
     playerVars: {
       autoplay: 1, //자동재생유무
